@@ -1,2 +1,2 @@
-# teaser-site2018
-WordCamp Ogijima 2018のティザーサイトのCSSとか画像など
+# WordCamp Ogijima 2018 Teaser Site.
+WordCamp Ogijima 2018のティザーサイトのCSSとか画像などをおきます。
