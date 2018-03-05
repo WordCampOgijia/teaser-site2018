@@ -1,5 +1,5 @@
 html[lang='ja'] body, html[lang='ja'] button, html[lang='ja'] input, html[lang='ja'] select, html[lang='ja'] textarea {
-	font-family: Helvetica, 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+	font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
 	font-size: 0.8rem;
 	line-height: 2em;
 	color: #000;
@@ -49,10 +49,14 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .entry-header.overview {
 	padding-top: 3em;
 }
+.entry-header.overview .entry-title::after {
+	display: none !important;
+}
 .entry-title {
 	font-size: 1.5rem !important;
-	font-weight: 600 !important; 
+	font-weight: 600 !important;
 	text-align: center;
+	text-transform: none !important; 
 	color: #000;
 }
 .entry-content h3 {
@@ -149,6 +153,11 @@ body:not(.title-tagline-hidden) .site-branding-text {
 
 .image-style1 {
 	margin-top: 3em;
+}
+
+#post-2 .entry-title::after {
+	display: block; 
+	content: 'ENGLISH COPY';
 }
 
 #panel3 .entry-header {
