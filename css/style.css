@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+html[lang='ja'] body, html[lang='ja'] button, html[lang='ja'] input, html[lang='ja'] select, html[lang='ja'] textarea {
+	font-family: Helvetica, 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+	font-size: 0.8rem;
+	line-height: 2em;
+	color: #000;
+}
+
+.entry-content a, .entry-summary a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong {
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.entry-content a img, .entry-summary a img, .widget a img, .site-footer .widget-area a img, .posts-navigation a img, .widget_authors a strong img {
+	transiton: 0.3s;
+}
+
+.site-branding-text {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	width: 360px;
+	max-width: 70vw;
+	height: 195px;
+	padding-right: 0; 
+	-webkit-transform: translateX(-50%); 
+	    -ms-transform: translateX(-50%); 
+	        transform: translateX(-50%);
+	text-indent: -9999px;
+	background: url('https://2018.ogijima.wordcamp.org/files/2018/03/logo.png') 0 0 no-repeat;
+	background-size: contain;
+}
+
+.site-branding {
+	height: 100% !important;
+}
+.site-branding .wrap {
+	height: 100%;
+}
+
+.menu-scroll-down {
+	display: none !important;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.entry-header.overview {
+	padding-top: 3em;
+}
+.entry-title {
+	font-size: 1.5rem !important;
+	font-weight: 600 !important; 
+	text-align: center;
+	color: #000;
+}
+.entry-content h3 {
+	font-size: 0.8rem;
+	text-align: center;
+	color: #000;
+}
+.entry-content h3 + p {
+	text-align: center;
+}
+.entry-content img {
+	max-width: 80%;
+}
+
+.btn-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 1em; 
+
+	-webkit-box-pack: center; 
+
+	    -ms-flex-pack: center; 
+
+	        justify-content: center;
+}
+.btn-round {
+	font-size: 0.75rem;
+	line-height: 1;
+	position: relative; 
+	margin-bottom: 3em;
+	padding: 10px 30px 10px 15px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 20px;
+	background-color: #fff;
+	-webkit-box-shadow: none  !important;
+	        box-shadow: none  !important;
+}
+.btn-round::after {
+	font-family: 'Material Icons';
+	font-size: 1.5rem;
+	position: absolute;
+	top: 50%;
+	right: 7px;
+	margin-top: 1px; 
+	content: '\E313';
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.btn-round:hover {
+	color: #fff !important;
+	background-color: #000;
+	-webkit-box-shadow: none  !important;
+	        box-shadow: none  !important;
+}
+
+.link-sns {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 1em 5%; 
+	list-style: none;
+
+	-ms-flex-pack: distribute;
+
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.link-sns li {
+	-ms-flex-preferred-size: 20%;
+	    flex-basis: 20%;
+}
+.link-sns a:hover {
+	opacity: 0.7;
+}
+.link-sns img {
+	max-width: 100%;
+}
+
+.edit-link {
+	text-align: right;
+}
+
+.aling-center {
+	text-align: center !important;
+}
+
+.image-style1 {
+	margin-top: 3em;
+}
+
+#panel3 .entry-header {
+	display: none;
+}
+#english + p {
+	margin-bottom: 2em;
+}
+@media only screen and (min-width: 30em) {
+	.entry-header.overview {
+		padding-top: 6em;
+	}
+	.btn-flex {
+		margin-top: 0;
+
+		-webkit-box-pack: end;
+
+		    -ms-flex-pack: end;
+
+		        justify-content: flex-end;
+	}
+	.link-sns {
+		margin: 0 3.6em;
+	}
+	.link-sns li {
+		-ms-flex-preferred-size: auto;
+		    flex-basis: auto;
+	}
+	#english {
+		padding-top: 1.6em;
+		padding-bottom: 1em;
+	}
+	#english + p {
+		margin-bottom: 5em;
+	}
+}
