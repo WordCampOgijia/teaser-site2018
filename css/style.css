@@ -1,6 +1,6 @@
 html[lang='ja'] body, html[lang='ja'] button, html[lang='ja'] input, html[lang='ja'] select, html[lang='ja'] textarea {
 	font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	line-height: 2em;
 	color: #000;
 }
@@ -60,7 +60,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	color: #000;
 }
 .entry-content h3 {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	text-align: center;
 	color: #000;
 }
