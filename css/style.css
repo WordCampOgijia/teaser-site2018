@@ -14,19 +14,19 @@ html[lang='ja'] body, html[lang='ja'] button, html[lang='ja'] input, html[lang='
 	transiton: 0.3s;
 }
 
-.site-branding-text {
+.site-branding-text a {
 	position: absolute;
 	top: 15%;
 	left: 50%;
-	width: 360px;
+	width: 375px;
 	max-width: 70vw;
-	height: 195px;
+	height: 205px;
 	padding-right: 0; 
 	-webkit-transform: translateX(-50%); 
 	    -ms-transform: translateX(-50%); 
 	        transform: translateX(-50%);
 	text-indent: -9999px;
-	background: url('https://2018.ogijima.wordcamp.org/files/2018/03/logo.png') 0 0 no-repeat;
+	background: url(https://2018.ogijima.wordcamp.org/files/2018/03/logo.png) 0 0 no-repeat;
 	background-size: contain;
 }
 
@@ -54,7 +54,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 }
 .entry-title {
 	font-size: 1.5rem !important;
-	font-weight: 600 !important;
+	font-weight: 700 !important;
 	text-align: center;
 	text-transform: none !important; 
 	color: #000;
@@ -64,11 +64,11 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	text-align: center;
 	color: #000;
 }
-.entry-content h3 + p {
-	text-align: center;
-}
 .entry-content img {
 	max-width: 80%;
+}
+.entry-content.align-center {
+	text-align: center;
 }
 
 .btn-flex {
@@ -155,16 +155,37 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	margin-top: 3em;
 }
 
-#post-158 .entry-title::after {
-	display: block; 
-	content: 'ENGLISH COPY';
+.title-camp {
+	font-size: 1rem !important;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-pack: center;
+
+	    -ms-flex-pack: center;
+
+	        justify-content: center;
+}
+.title-camp::before, .title-camp::after {
+	width: 60px;
+	height: auto;
+	margin: 0 5px; 
+	content: '';
+	background: url(https://2018.ogijima.wordcamp.org/files/2018/03/garland.png) center center no-repeat;
+	background-size: contain;
+}
+.title-camp::after {
+	-webkit-transform: scale(-1, 1);
+	    -ms-transform: scale(-1, 1);
+	        transform: scale(-1, 1);
 }
 
 #panel3 .entry-header {
 	display: none;
 }
-#english + p {
-	margin-bottom: 2em;
+#panel3 .align-center {
+	margin-top: 2em;
 }
 @media only screen and (min-width: 30em) {
 	.entry-header.overview {
@@ -186,11 +207,11 @@ body:not(.title-tagline-hidden) .site-branding-text {
 		-ms-flex-preferred-size: auto;
 		    flex-basis: auto;
 	}
+	#panel3 .align-center {
+		margin-top: 5em;
+	}
 	#english {
 		padding-top: 1.6em;
 		padding-bottom: 1em;
-	}
-	#english + p {
-		margin-bottom: 5em;
 	}
 }
