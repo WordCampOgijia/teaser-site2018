@@ -16,7 +16,7 @@ html[lang='ja'] body, html[lang='ja'] button, html[lang='ja'] input, html[lang='
 
 .site-branding-text a {
 	position: absolute;
-	top: 15%;
+	top: 30%;
 	left: 50%;
 	width: 375px;
 	max-width: 70vw;
