@@ -180,7 +180,9 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	    -ms-transform: scale(-1, 1);
 	        transform: scale(-1, 1);
 }
-
+#post-158 .panel-image {
+	display: none;
+}
 #panel3 .entry-header {
 	display: none;
 }
