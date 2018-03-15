@@ -1,0 +1,25 @@
+{
+  "name": "WordCamp Ogijima 2018",
+  "version": "1.0.0",
+  "description": "A Task runner for WordCamp Ogijima 2018 theme.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WordCamp Ogijima 2018 team",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "browser-sync": "^2.18.13",
+    "css-mqpacker": "^6.0.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rewrite-css": "0.0.9",
+    "gulp-ruby-sass": "^2.1.0"
+  }
+}

@@ -1,0 +1,210 @@
+//----------------------
+//  Teaser Site
+//----------------------
+//-- overwrite ---
+html[lang="ja"] body, html[lang="ja"] button, html[lang="ja"] input, html[lang="ja"] select, html[lang="ja"] textarea{
+	font-family: $font-gothic;
+	font-size: 0.9rem;
+	line-height: 2em;
+	color: $black;
+}
+.entry-content a, .entry-summary a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong{
+	transition: .3s;
+	img{
+		transiton: .3s;
+	}
+}
+//-- main-visual ---
+.site-description {
+	display: none;
+}
+.site-branding-text a{
+	width: 375px;
+	max-width: 70vw;
+	height: 205px;
+	background: url(https://2018.ogijima.wordcamp.org/files/2018/03/logo.png) 0 0 no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-right: 0;
+}
+.site-branding{
+	height: 100% !important;
+	.wrap{
+		height: 100%;
+	}
+}
+.menu-scroll-down{
+	display: none !important;
+}
+body:not(.title-tagline-hidden) .site-branding-text{
+	display: inline-block;
+	vertical-align: middle;
+}
+//-- entry ---
+.entry{
+	&-header{
+		&.overview{
+			padding-top: 3em;
+			@include mqTB{
+				padding-top: 6em;
+			}
+			.entry-title::after{
+				display: none !important;
+			}
+		}
+	}
+	&-title{
+		text-align: center;
+		font-size: 1.5rem !important;
+		color: $black;
+		font-weight: 700 !important;
+		text-transform: none !important;
+	}
+	&-content {
+		h3{
+			text-align: center;
+			font-size: 0.9rem;
+			color: $black;
+			// & + p{
+			// 	text-align: center;
+			// }
+		}
+		img{
+			max-width: 80%;
+		}
+		&.align-center{
+			text-align: center;
+		}
+	}
+}
+
+//-- custom ---
+.btn{
+	&-flex{
+		display: flex;
+		justify-content: center;
+		margin-top: 1em;
+		@include mqTB{
+			margin-top: 0;
+			justify-content: flex-end;
+		}
+	}
+	&-round{
+		padding: 10px 30px 10px 15px ;
+		border-radius: 20px;
+		font-size: 0.75rem;
+		line-height: 1;
+		background-color: $white;
+		border: 1px solid $black;
+		color: $black;
+		margin-bottom: 3em;
+		box-shadow: none  !important;
+		transition: .3s;
+		position: relative;
+		&::after{
+			font-family: FontAwesome;
+			content: '\f107';
+			font-size: 1.5rem;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-top: 1px;
+		}
+		&:hover{
+			background-color: $black;
+			color: $white !important;
+			box-shadow: none  !important;
+		}
+	}
+}
+.link-sns{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+	margin: 1em 5%;
+	@include mqTB{
+		margin: 0 3.6em;
+	}
+	li{
+		flex-basis: 20%;
+		@include mqTB{
+			flex-basis: auto;
+		}
+	}
+	a{
+		&:hover{
+			opacity: .7;
+		}
+	}
+	img{
+		max-width: 100%;
+	}
+}
+.edit{
+	&-link{
+		text-align: right;
+		// display: none !important;
+	}
+}
+.aling-center{
+	text-align: center !important;
+}
+.image-style{
+	&1{
+		margin-top: 3em;
+	}
+}
+// #post-2{
+// 	.entry-title{
+// 		&::after{
+// 			content: 'ENGLISH COPY';
+// 			display: block;
+// 		}
+// 	}
+// }
+.title{
+	&-camp{
+		font-size: 1rem !important;
+		display: flex;
+		justify-content: center;
+		&::before,&::after{
+			content: '';
+			background: url(https://2018.ogijima.wordcamp.org/files/2018/03/garland.png) center center no-repeat;
+			background-size: contain;
+			width: 60px;
+			height: auto;
+			margin: 0 5px;
+		}
+		&::after{
+			transform: scale(-1, 1);
+		}
+	}
+}
+#post-158{
+	.panel-image{
+		display: none;
+	}
+}
+#panel3{
+	.entry-header{
+		display: none;
+	}
+	.align-center{
+		margin-top: 2em;
+		@include mqTB{
+			margin-top: 5em;
+		}
+	}
+}
+#english{
+	@include mqTB{
+		padding-top: 1.6em;
+		padding-bottom: 1em;
+	}
+}

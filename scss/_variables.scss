@@ -1,0 +1,30 @@
+//-------------------------------------------------------
+// font
+//-------------------------------------------------------
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700);
+
+$baseFont: 14px;
+$baseFont-s: 12px;
+
+$font-gothic: 'Noto Sans JP','Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+
+//-------------------------------------------------------
+//  color
+//-------------------------------------------------------
+$black: #000;
+$light-gray: #eee;
+$white: #fff;
+
+
+// mixin
+//------------------------------------------
+@mixin mqTB{
+  @media only screen and (min-width: 30em){
+    @content;
+  }
+}
+@mixin mqPC{
+  @media screen and (min-width: 48em){
+    @content;
+  }
+}
